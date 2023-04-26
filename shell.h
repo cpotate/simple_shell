@@ -11,11 +11,8 @@
 #include <sys/wait.h> /* wait */
 #include <sys/stat.h> /* stat function */
 #include <signal.h> /* signal management */
-#include <fcntl.h> /* to open files*/
+#include <fcntl.h> /* to open file*/
 
-/************* MACROS **************/
-
-#include "macros.h" /* for msg help and prompt */
 
 /************* STRUCTURES **************/
 
@@ -66,7 +63,7 @@ void inicialize_data(data_of_program *data, int arc, char *argv[], char **env);
 void sisifo(char *prompt, data_of_program *data);
 
 /* Print the prompt in a new line */
-void handle_ctrl_c(int opr UNUSED);
+void handle_ctrl_c(int opr, UNUSED);
 
 
 /*========  _getline.c  ========*/
